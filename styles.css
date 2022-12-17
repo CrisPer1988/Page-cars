@@ -22,10 +22,10 @@ body{
 }
 
 .content {
+    
     display: flex;
     height: auto;
     flex-direction: column;
-    justify-content: center;
     
 }
 
@@ -87,16 +87,18 @@ body{
     border-bottom-right-radius: 10px;
 }   
 
-@media (min-width: 700px) {
+@media (min-width:700px) {
     .content {
+        height: auto;
         flex-direction: row;
+        
+        
         
     }
 
-    .main {
-        width: 100%;
-    }
+    
     .seccion1 {
+        
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 10px;
