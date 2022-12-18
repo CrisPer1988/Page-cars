@@ -24,9 +24,23 @@ body{
 .content {
     
     display: flex;
-    height: auto;
+    width: 100%;
     flex-direction: column;
     
+}
+
+.seccion1,
+.seccion2,
+.seccion3 {
+    color: var(--Transparentwhiteparagraphs);
+}
+    
+    
+    
+
+
+.section {
+    justify-items:normal;
 }
 
 .icons {
@@ -36,6 +50,7 @@ body{
 .text {
     margin: 10px 25px;
     line-height: 1,5rem;
+    
 }
 .btn {
     background-color: var(--Verylightgraybackgroundheadingsbuttons);
@@ -65,14 +80,11 @@ body{
     color: var(--Verydarkcyan);
 }
 
-.main {
-    color: white;
-    
-}
 
 
 .seccion1 {
-    background-color: var(--Brightorange);
+    
+    background-color: var(--Brightorange); 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -87,15 +99,19 @@ body{
     border-bottom-right-radius: 10px;
 }   
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
     .content {
-        height: auto;
         flex-direction: row;
-        
         
         
     }
 
+    
+    
+    
+
+    
+    
     
     .seccion1 {
         
@@ -103,6 +119,7 @@ body{
         border-top-right-radius: 0;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        
     }
 
     .seccion3 {
@@ -111,6 +128,7 @@ body{
         border-bottom-right-radius: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        
     
     }
 
