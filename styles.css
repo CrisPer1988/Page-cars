@@ -17,14 +17,22 @@
 }
 
 body{
-    padding: 20px
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%
+    /* width: 100% */
 }
 
 .seccion1,
@@ -41,7 +49,9 @@ body{
 
 .text {
     margin: 10px 25px;
-    line-height: 1,5rem
+    line-height: 1,5rem;
+    max-width: 225px;
+
     
 }
 .btn {
@@ -51,6 +61,13 @@ body{
     width: 40%;
     padding: 0.5rem;
     margin: 25px
+}
+
+.btn:hover {
+    background-color: rgb(107, 150, 121);
+    
+    
+    
 }
 
 .btn a {
@@ -93,7 +110,7 @@ body{
 }   
 
 @media (min-width: 700px) {
-    .content {
+    .content{
         
         flex-direction: row
      }
